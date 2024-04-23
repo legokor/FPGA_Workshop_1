@@ -40,8 +40,3 @@ begin
 	Led <= sw;
 end Behavioral;
 
-architecture Gate of Wire is
-begin
-	Led <= (sw(1) xnor sw(0)) & (sw(1) xor sw(0)) & (sw(1) nand sw(0)) & (sw(1) and sw(0)) & (sw(1) nor sw(0)) & (sw(1) or sw(0)) & (not sw(1)) & (sw(0));
-end Gate;
-
